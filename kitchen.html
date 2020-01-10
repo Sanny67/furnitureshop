@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto+Slab|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <title>Calcutta Wood Craft | Gallery | Modular Kitchen</title>
+  <style>
+    ::selection {
+      background: #00ae4f;
+      color: white;
+    }
+
+    ::-moz-selection {
+      background: #00ae4f;
+      color: white;
+    }
+
+    .content {
+      position: relative;
+    }
+
+    .gallery-nav {
+      float: left;
+      perspective: 500px;
+    }
+
+    .parallax1 {
+      background-image: url("images/parallax-background1.png");
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallax1 h1 {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    .locator,
+    .locator a {
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .locator a:hover,
+    .locator a:active {
+      text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.5), 2px -2px 4px rgba(255, 255, 255, 0.5), -2px 2px 4px rgba(255, 255, 255, 0.5), 2px 2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    .gallery-nav div {
+      background: #363636;
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      transition-duration: 0.4s;
+      transform: rotateY(15deg);
+    }
+
+    .gallery-nav a {
+      text-decoration: none;
+      color: #fff7cc;
+    }
+
+    .gallery-nav div:hover,
+    .gallery-nav div:active {
+      transform: rotateY(0deg);
+    }
+
+    .gallery-nav a:hover {
+      text-decoration: none;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    .gallery .textbox {
+      background-color: #363636;
+      color: white;
+    }
+
+    .gallery img {
+      width: 100%;
+      transition: 1.5s;
+      transform-origin: 0 100%;
+    }
+
+    .block1 {
+      width: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .block {
+      overflow: hidden;
+      border: 1px solid black;
+      perspective: 50em;
+      box-sizing: border-box;
+      transition: 1.5s ease;
+      position: relative;
+      display: inline-block;
+    }
+
+    .textbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid white;
+      z-index: 1;
+      opacity: 0;
+      font-family: 'Montserrat', sans-serif;
+      transform: rotateX(-90deg);
+      transform-origin: 50% 0%;
+      transition: 1.5s ease;
+    }
+
+    .block:hover img {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+
+    .block:hover .textbox {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+
+
+
+
+    @media only screen and (min-width: 1385px) {
+      .content {
+        width: 96%;
+        margin: 20px auto;
+        height: 700px;
+      }
+
+      .gallery-nav {
+        width: 400px;
+        margin-top: 20px;
+      }
+
+      .parallax1 {
+        height: 125vh;
+        padding: 40px;
+      }
+
+      .parallax1 h1 {
+        font-size: 3.2em;
+      }
+
+      .locator {
+        font-size: 2em;
+        margin-bottom: 40px;
+      }
+
+      .gallery-nav div {
+        border-radius: 5px;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 68%;
+        padding-top: 20px;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 25px 0px;
+      }
+
+      .block {
+        width: 380px;
+        height: 193px;
+        margin: 20px;
+      }
+
+      .textbox {
+        padding: 30px;
+        font-size: 1.3em;
+      }
+    }
+
+
+
+    @media only screen and (min-width: 1281px) and (max-width: 1384.9px) {
+      .content {
+        width: 96%;
+        margin: 20px auto;
+        height: 700px;
+      }
+
+      .gallery-nav {
+        width: 350px;
+        margin-top: 20px;
+      }
+
+      .parallax1 {
+        height: 130vh;
+        padding: 40px;
+      }
+
+      .parallax1 h1 {
+        font-size: 3.2em;
+      }
+
+      .locator {
+        font-size: 2em;
+        margin-bottom: 40px;
+      }
+
+      .gallery-nav div {
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 68%;
+        padding: 20px 10px;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 10px 0px;
+      }
+
+      .block {
+        width: 330px;
+        height: 167px;
+        margin: 20px;
+      }
+
+      .textbox {
+        padding: 25px;
+        font-size: 1.3em;
+      }
+    }
+
+
+
+    @media only screen and (min-width: 1020px) and (max-width: 1280.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 700px;
+      }
+
+      .gallery-nav {
+        width: 300px;
+        margin-top: 10px;
+      }
+
+      .parallax1 {
+        height: 110vh;
+        padding: 40px;
+      }
+
+      .locator {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav div {
+        border-radius: 5px;
+        margin: 4px;
+        padding: 6px;
+        font-size: 0.9em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 68%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 30px 0px;
+      }
+
+      .block {
+        width: 270px;
+        height: 137px;
+        margin: 12px;
+      }
+
+      .textbox {
+        padding: 20px;
+        font-size: 1.05em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 992px) and (max-width: 1019.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 700px;
+      }
+
+      .gallery-nav {
+        width: 280px;
+        margin-top: 10px;
+      }
+
+      .parallax1 {
+        height: 110vh;
+        padding: 40px;
+      }
+
+      .locator {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav div {
+        margin: 4px;
+        padding: 6px;
+        font-size: 0.9em;
+      }
+
+      .gallery-nav div:hover {
+        padding: 4px;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 68%;
+        padding-top: 14px;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 15px 0px;
+      }
+
+      .block {
+        width: 265px;
+        height: 134px;
+        margin: 12px 10px;
+      }
+
+      .textbox {
+        padding: 20px;
+        font-size: 1em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 767px) and (max-width: 991.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 500px;
+      }
+
+      .gallery-nav {
+        width: 220px;
+        margin-top: 10px;
+      }
+
+      .parallax1 {
+        height: 85vh;
+        padding: 20px;
+      }
+
+      .locator {
+        font-size: 1.35em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav div {
+        margin: 4px;
+        padding: 4px;
+        font-size: 0.8em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 68%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 20px 0px;
+      }
+
+      .block {
+        width: 210px;
+        height: 106px;
+        margin: 10px;
+      }
+
+      .textbox {
+        padding: 16px;
+        font-size: 0.8em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 660px) and (max-width: 766.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 500px;
+      }
+
+      .parallax1 {
+        height: 80vh;
+        padding: 20px;
+      }
+
+      .locator {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav {
+        width: 180px;
+      }
+
+      .gallery-nav div {
+        margin: 3px;
+        padding: 4px;
+        font-size: 0.75em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 70%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 18px 0px;
+      }
+
+      .block {
+        width: 185px;
+        height: 93px;
+        margin: 10px;
+      }
+
+      .textbox {
+        padding: 12px;
+        font-size: 0.78em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 580px) and (max-width: 659.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 500px;
+      }
+
+      .parallax1 {
+        height: 60vh;
+        padding: 20px;
+      }
+
+      .locator {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav {
+        width: 160px;
+      }
+
+      .gallery-nav div {
+        margin: 3px;
+        padding: 4px;
+        font-size: 0.65em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 70%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 18px 0px;
+      }
+
+      .block {
+        width: 165px;
+        height: 83px;
+        margin: 8px;
+      }
+
+      .textbox {
+        padding: 10px;
+        font-size: 0.69em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 476px) and (max-width: 579.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 500px;
+      }
+
+      .parallax1 {
+        height: 120vh;
+        padding: 20px;
+      }
+
+      .locator {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav {
+        width: 160px;
+      }
+
+      .gallery-nav div {
+        margin: 3px;
+        padding: 4px;
+        font-size: 0.75em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background-sm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 20px 0px;
+      }
+
+      .block {
+        width: 200px;
+        height: 101px;
+        margin: 10px 5px;
+      }
+
+      .textbox {
+        padding: 15px;
+        font-size: 0.75em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 420px) and (max-width: 475.9px) {
+      .content {
+        width: 100%;
+        margin: 15px auto;
+        height: 500px;
+      }
+
+      .parallax1 {
+        height: 110vh;
+        padding: 15px;
+      }
+
+      .locator {
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav {
+        width: 150px;
+      }
+
+      .gallery-nav div {
+        margin: 4px;
+        padding: 4px;
+        font-size: 0.68em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background-sm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 60%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 15px 0px;
+      }
+
+      .block {
+        width: 190px;
+        height: 96px;
+        margin: 8px 5px;
+      }
+
+      .textbox {
+        padding: 15px;
+        font-size: 0.75em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 374px) and (max-width: 419.9px) {
+      .content {
+        width: 100%;
+        margin: 0 auto;
+        height: 500px;
+      }
+
+      .parallax1 {
+        height: 100vh;
+        padding: 15px;
+      }
+
+      .locator {
+        font-size: 0.8em !important;
+        margin-bottom: 20px;
+      }
+
+      .gallery-nav {
+        width: 130px;
+      }
+
+      .gallery-nav div {
+        width: 130px;
+        margin: 3px;
+        padding: 3px;
+        font-size: 0.6em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background-sm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 60%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 5px 0px;
+      }
+
+      .block {
+        width: 180px;
+        height: 91px;
+        margin: 10px;
+      }
+
+      .textbox {
+        padding: 10px;
+        font-size: 0.6em;
+      }
+    }
+
+
+
+
+    @media only screen and (min-width: 318px) and (max-width: 375.5px) {
+      .content {
+        width: 100%;
+        margin: 0 auto;
+        height: 460px;
+      }
+
+      .parallax1 {
+        height: 90vh;
+        padding: 25px 15px;
+      }
+
+      .locator {
+        font-size: 0.8em !important;
+        margin-bottom: 10px;
+      }
+
+      .gallery-nav {
+        width: 110px;
+      }
+
+      .gallery-nav div {
+        margin: 3px;
+        padding: 3px;
+        font-size: 0.55em;
+      }
+
+      .gallery {
+        background: url("images/gallery-background-sm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        width: 60%;
+        float: right;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .block1 {
+        margin: 15px 0px;
+      }
+
+      .block {
+        width: 150px;
+        height: 76px;
+        margin: 10px 0px;
+      }
+
+      .textbox {
+        padding: 10px;
+        font-size: 0.55em;
+      }
+    }
+  </style>
+</head>
+
+<body id="page4.2">
+  <header>
+    <div class="firstnav">
+      <div id="left"><a href="index.html"><img src="images/mylogo.png"></a></div>
+      <div id="right">
+        <span><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+        <span><a href="http://twitter.com"><i class="fab fa-twitter"></i> </a></span>
+        <span><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></span>
+        <span><a href="http://pinterest.com"><i class="fab fa-pinterest-p"></i></a></span>
+      </div>
+    </div>
+    <div id="navbar">
+      <div id="sidebar">
+        <div class="toggle-btn" id="toggle-btn" onclick="menuToggle()">
+          <i class="fas fa-bars" id="open"></i>
+          <i class="fas fa-times" id="close"></i>
+        </div>
+        <ul class="menu">
+          <li> <a href="index.html" class="nav-item"> <i class="fas fa-home menu-option"></i> Home</a></li>
+          <li> <a href="services.html" class="nav-item"> <i class="fas fa-cogs menu-option"></i> Services</a></li>
+          <li> <a href="catalogue.html" class="nav-item"> <i class="fas fa-couch menu-option"></i> Interior</a></li>
+          <li> <a href="gallery.html" class="nav-item"> <i class="fas fa-images menu-option"></i> Gallery</a></li>
+          <li> <a href="contact.html" class="nav-item"> <i class="far fa-address-card menu-option"></i> Contact us</a>
+          </li>
+          <li> <a href="offers.html" class="nav-item"> <i class="far fa-star menu-option"></i> Offers</a></li>
+        </ul>
+        <div class="below">
+          <span><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+          <span><a href="http://twitter.com"><i class="fab fa-twitter"></i> </a></span>
+          <span><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></span>
+          <span><a href="http://pinterest.com"><i class="fab fa-pinterest-p"></i></a></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="divider"></div>
+  <div class="parallax1">
+    <div class="content">
+      <div class="locator">
+        <a href="index.html">Home</a> > <a href="gallery.html">Gallery</a> > Modular Kitchen
+      </div>
+      <div class="gallery-nav">
+        <a href="diningTables.html">
+          <div>Dining Tables</div>
+        </a>
+        <a href="kitchen.html">
+          <div>Modular Kitchen</div>
+        </a>
+        <a href="wadrobes.html">
+          <div>Wadrobes</div>
+        </a>
+        <a href="beds.html">
+          <div>Beds</div>
+        </a>
+        <a href="doors.html">
+          <div>Doors</div>
+        </a>
+        <a href="office.html">
+          <div>Office Furniture</div>
+        </a>
+        <a href="conference.html">
+          <div>Conference Tables</div>
+        </a>
+        <a href="centreTables.html">
+          <div>Centre Tables</div>
+        </a>
+        <a href="sofas.html">
+          <div>Sofas</div>
+        </a>
+        <a href="sofaCumBed.html">
+          <div>Sofa cum Beds</div>
+        </a>
+      </div>
+      <div class="gallery">
+        <div class="block1">
+          <div class="block" onclick="viewModal('images/KT1.jpg', 'A modern kitchen with amazing red colour.')">
+            <img src="images/KT1.jpg" alt="Type 1">
+            <div class="textbox">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos repellendus ducimus.
+            </div>
+          </div>
+          <div class="block"
+            onclick="viewModal('images/KT@.jpg', 'A modern L shaped kitchen with amazing white colour.')">
+            <img src="images/KT2.jpg" alt="Type 2">
+            <div class="textbox">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos repellendus ducimus.
+            </div>
+          </div>
+          <div class="block"
+            onclick="viewModal('images/KT3.jpg', 'A spacious U shaped kitchen design, use of wood for cabinet and drawer.')">
+            <img src="images/KT3.jpg" alt="Type 3">
+            <div class="textbox">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos repellendus ducimus.
+            </div>
+          </div>
+          <div class="block"
+            onclick="viewModal('images/KT1.jpg', 'This L shaped kitchen makes use of 2 shades of colour combination cabinet and drawer.')">
+            <img src="images/KT1.jpg" alt="Type 4">
+            <div class="textbox">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos repellendus ducimus.
+            </div>
+          </div>
+          <div class="block"
+            onclick="viewModal('images/KT2.jpg', 'A modern L shaped kitchen with amazing orange colour.')">
+            <img src="images/KT2.jpg" alt="Type 5">
+            <div class="textbox">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quos repellendus ducimus.
+            </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- parallax ends -->
+
+  <footer>
+    <p class="foot-head">Like what you see?</p>
+    <p>Then give us a call we'll chat through what you need, or visit us at:</p>
+    <p>Address : Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Call : 0000000000</p>
+    <p>Copyright © 2020 All Rights Reserved</p>
+    <div>
+      <span><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+      <span><a href="http://twitter.com"><i class="fab fa-twitter"></i> </a></span>
+      <span><a href="http://youtube.com"><i class="fab fa-youtube"></i></a></span>
+      <span><a href="http://pinterest.com"><i class="fab fa-pinterest-p"></i></a></span>
+      <div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/stickynav.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    function menuToggle() {
+      document.getElementById("sidebar").classList.toggle("active");
+      if (document.getElementById("sidebar").classList.contains("active")) {
+        document.getElementById("toggle-btn").classList.add("togglechange");
+        document.getElementById("page4.2").style.position = "fixed";
+        document.getElementById("open").style.visibility = "hidden";
+        document.getElementById("close").style.visibility = "visible";
+      }
+      else {
+        document.getElementById("toggle-btn").classList.remove("togglechange");
+        document.getElementById("page4.2").style.position = "relative";
+        document.getElementById("close").style.visibility = "hidden";
+        document.getElementById("open").style.visibility = "visible";
+      }
+    }
+  </script>
+  <script>
+    if ((screen.width) < 768.5) {
+      document.getElementById.innerHTML = '<b><i class="fas fa-phone fa-flip-horizontal"></i> +91 9903270500</b>';
+    }
+  </script>
+</body>
+
+</html>

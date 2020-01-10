@@ -1,0 +1,691 @@
+@media only screen and (min-width: 1280px)
+{
+    .banner {
+        position: relative;
+        padding: 20px 0px 80px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        width: 400px;
+        height: 242px;
+        margin: 30px auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 242px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 242px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        float: left;
+    }
+    .dg-next{
+        float: right;
+    }
+    .dg-prev img, .dg-next img{
+        margin-top: 50%;
+        top: 50%;
+    }
+
+    .dg-container nav img {
+        width: 30%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+    z-index: 99;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 801px) and (max-width: 1279.9px)
+{
+    .banner {
+        position: relative;
+        padding: 20px 0px 80px 0;        
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        position: relative;
+        width: 400px;
+        height: 242px;
+        margin: 30px auto;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 242px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 242px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        width: 5%;
+        float: left;
+    }
+    .dg-next{
+        width: 5%;
+        float: right;
+    }
+    .dg-prev img, .dg-next img{
+        margin-top: 170%;
+    }
+
+    .dg-container nav img {
+        width: 100%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+    z-index: 99;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 666px) and (max-width: 800.9px)
+{
+    .banner {
+        position: relative;
+        padding: 10px 0px 60px 0;        
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        width: 270px;
+        height: 151px;
+        margin: 0 auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 151px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 151px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        width: 14%;
+        float: left;
+    }
+    .dg-next{
+        width: 14%;
+        float: right;
+    }
+    .dg-prev img, .dg-next img{
+        margin-top: 55%;
+    }
+
+    .dg-container nav img {
+        width: 37%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+    z-index: 99;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 431px) and (max-width: 665.9px)
+{
+    .banner {
+        position: relative;
+        padding: 10px 0px 60px 0;        
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        width: 200px;
+        height: 121px;
+        margin: 0 auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 121px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 121px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        width: 22%;
+        float: left;
+    }
+
+    .dg-next{
+        width: 22%;
+        float: right;
+    }
+
+    .dg-prev img, .dg-next img{
+        margin-top: 40%;
+    }
+
+    .dg-container nav img {
+        width: 20%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+    z-index: 99;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 374px) and (max-width: 430.9px)
+{
+    .banner {
+        position: relative;
+        padding: 10px 0 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        width: 200px;
+        height: 121px;
+        margin: 0 auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 121px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 121px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        width: 22%;
+        float: left;
+    }
+
+    .dg-next{
+        width: 22%;
+        float: right;
+    }
+
+    .dg-prev img, .dg-next img{
+        margin-top: 50%;
+    }
+
+    .dg-container nav img {
+        width: 30%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+    z-index: 99;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 318px) and (max-width: 373.9px)
+{
+    .banner {
+        position: relative;
+        padding: 11px 0 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .dg-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .dg-wrapper {
+        width: 200px;
+        height: 121px;
+        margin: 0 auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .dg-container ol{
+        display: none;
+    }
+
+    .dg-wrapper span {
+        width: 100%;
+        height: 121px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .dg-wrapper span:first-child {
+        z-index: 2;
+    }
+
+    .dg-wrapper span img {
+        display: block;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 4px;
+        width: 100%;
+        height: 121px;
+        background: #fff;
+    }
+
+    .dg-wrapper span.dg-transition {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dg-wrapper span.dg-transition-fast {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .dg-prev{
+        width: 15%;
+        float: left;
+    }
+
+    .dg-next{
+        width: 15%;
+        float: right;
+    }
+    
+    .dg-prev img, .dg-next img{
+        margin-top: 100%;
+    }
+
+    .dg-container nav img {
+        width: 40%;
+    }
+
+    .dg-container nav span:hover {
+        opacity: 1;
+    }
+
+    .dg-container nav span.dg-next {
+        background-position: top right;
+        margin-left: 10px;
+    }
+
+    .dg-container #lightButton2 {
+        bottom: 20px;
+    }
+
+    .dg-container .button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .dg-container .button li {
+        cursor: pointer;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.30);
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .dg-container .button .light {
+        background: #01BDFF;
+    }
+    .dg-center{
+        z-index: 99;
+    }
+}

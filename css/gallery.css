@@ -1,0 +1,204 @@
+.gallery-container{
+    background-image: url("../images/gall-back13.jpg");
+    background-size: 20%;
+    /* outline: 1px solid black; */
+    position: relative;
+    text-align: center;
+}
+.block{
+    margin: 20px 18px;
+    width: 380px;
+    /* border: 1px solid black; */
+    height: 193px;
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.block img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: -55%;
+    height: 100%;
+    width: 190px;
+    transform: translateY(-25%);
+    color: white;
+    opacity: 1;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+.block:hover .content{
+    right: 0;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -80%;
+    height: 100%;
+    width: 70%;
+    transition: .5s ease-in-out;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    transform: skew(20deg);
+}
+.block:hover .overlay{
+    right: -10%;
+}
+footer{
+    background-color: #00ae4f;
+}
+@media only screen and (min-width: 1281px)
+{
+    .gallery-container{
+        width: 1300px;
+        padding: 20px;
+        margin: 50px auto;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280.9px)
+{
+    .gallery-container{
+        width: 970px;
+        padding: 18px;
+        margin: 40px auto;
+    }
+    .block{
+        margin: 10px;
+        width: 288px;
+        /* border: 1px solid white; */
+        height: 146px;
+    }
+    .block h1{
+        font-size: 0.2em;
+    }
+    .content{
+        width: 150px;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023.9px)
+{
+    .gallery-container{
+        width: 970px;
+        padding: 18px;
+        margin: 40px auto;
+    }
+    .block{
+        margin: 10px;
+        width: 288px;
+        /* border: 1px solid white; */
+        height: 146px;
+    }
+    .block h1{
+        font-size: 0.2em;
+    }
+    .content{
+        width: 150px;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.9px)
+{
+    .gallery-container{
+        width: 700px;
+        padding: 18px;
+        margin: 40px auto;
+    }
+    .block{
+        margin: 15px;
+        width: 288px;
+        /* border: 1px solid white; */
+        height: 146px;
+    }
+    .block h1{
+        font-size: 0.2em;
+    }
+    .content{
+        width: 150px;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width: 665px) and (max-width: 767.9px)
+{
+    .gallery-container{
+        width: 615px;
+        padding: 15px;
+        margin: 40px auto;
+    }
+    .block{
+        margin: 10px;
+        width: 260px;
+        /* border: 1px solid white; */
+        height: 132px;
+    }
+    .content{
+        width: 150px;
+        font-size: 1.4em;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 664.9px)
+{
+    .gallery-container{
+        width: 390px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+    .block{
+        margin: 5px;
+        width: 170px;
+        /* border: 1px solid white; */
+        height: 86px;
+    }
+    .content{
+        width: 100px;
+        font-size: 0.95em;
+        line-height: 20px;
+    }
+}
+@media only screen and (min-width: 374px) and (max-width: 419.9px)
+{
+    .gallery-container{
+        width: 340px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+    .block{
+        margin: 5px;
+        width: 145px;
+        /* border: 1px solid white; */
+        height: 73px;
+    }
+    .content{
+        width: 80px;
+        font-size: 0.75em;
+        line-height: 18px;
+    }
+}
+@media only screen and (min-width: 318px) and (max-width: 373.9px)
+{
+    .gallery-container{
+        width: 300px;
+        padding: 10px 0;
+        margin: 30px auto;
+    }
+    .block{
+        margin: 5px;
+        width: 130px;
+        /* border: 1px solid white; */
+        height: 66px;
+    }
+    .content{
+        width: 80px;
+        font-size: 0.75em;
+        line-height: 18px;
+    }
+}

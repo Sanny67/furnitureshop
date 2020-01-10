@@ -1,0 +1,85 @@
+.parallax-text{
+    margin: 5px 0px !important;
+}
+footer{
+    background: #00ae4f;
+}
+h1{
+    color: white;
+    text-shadow: 0 0 2px #eee, 0 0 4px #eee, 0 0 6px #838383, 0 0 8px #838383, 0 0 10px #838383, 0 0 12px #838383, 0 0 14px #838383;
+}
+
+
+
+/* Desktop Screen 1025px to 1280px                               2 */
+
+
+@media only screen and (min-width: 781px)
+{
+    .banner h1{
+        margin: 10px 0 20px 0;
+    }
+    #dg-container{
+        height: 242px;
+    }
+}
+
+/* Tablets, Ipads (potrait) 668px to 768px                      4*/
+
+
+@media only screen and (min-width: 666px) and (max-width: 780px)
+{
+    .banner h1{
+        font-size: 2em;
+        margin: 10px 0px 25px 0px;
+    }
+    #dg-container{
+        height: 151px;
+    }
+}
+
+
+/* Mobiles (large)  375px to 576px								 								4*/
+
+
+@media only screen and (min-width: 374px) and (max-width: 576.5px)
+{
+    .parallax h1{
+        font-size: 1.8em;
+    }
+    .parallax-text{
+        font-size: 1.1em;
+    }
+    #dg-container{
+        height: 121px;
+    }
+    .banner h1{
+        font-size: 1.7em;
+        margin: 5px 0px 25px 0px;
+    }
+}
+
+
+
+/* Iphones below 320px */
+
+
+@media only screen and (min-width: 318px) and (max-width: 373.9px)
+{
+    .parallax h1{
+        font-size: 1.55em;
+    }
+    .parallax-text{
+        font-size: 0.95em;
+    }
+    #dg-container{
+        height: 121px;
+    }
+    .banner{
+        padding: 10px 0px 40px 0px !important;
+    }
+    .banner h1{
+        font-size: 1.6em;
+        margin: 10px 0px 20px 0px;
+    }
+}
